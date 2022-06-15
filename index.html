@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BT_JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ---- Bài 5 ----  -->
+      <div class="card mt-2" style="width: 700px">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          Bài 5: Tính ngày tháng năm
+        </div>
+        <div class="card-body">
+          <div class="row form-group">
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="ngay"
+                placeholder="Nhập Ngày"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="thang"
+                placeholder="Nhập Tháng"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="nam"
+                placeholder="Nhập Năm"
+              />
+            </div>
+          </div>
+          <button class="btn btn-danger" id="hQua">Ngày Hôm Qua</button>
+          <button class="btn btn-danger" id="mai">Ngày Mai</button>
+        </div>
+        <div class="card-footer text-center">
+          <div id="xuatNgay" class="alert alert-primary" role="alert">
+            Chú ý đón xem, chỉ 1 lần duy nhất!
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Bài 6 ----  -->
+      <div class="card mt-2" style="width: 700px">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          Bài 6: Tính ngày
+        </div>
+        <div class="card-body">
+          <div class="row form-group">
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="month"
+                placeholder="Nhập Tháng"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="year"
+                placeholder="Nhập Năm"
+              />
+            </div>
+            <div class="col-4">
+              <button class="btn btn-danger" id="TinhNgay">Tính Ngày</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <div id="xuatRaNgay" class="alert alert-primary" role="alert">
+            Chú ý đón xem, chỉ 1 lần duy nhất!
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Bài 7 ----  -->
+      <div class="card mt-2" style="width: 700px">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          Bài 7: Đọc số
+        </div>
+        <div class="card-body">
+          <div class="row form-group">
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="so3ChuSo"
+                placeholder="Nhập số có 3 chữ số"
+              />
+            </div>
+            <div class="col-4">
+              <button class="btn btn-danger" id="docSo">Đọc số</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <div
+            id="xuatDocSo"
+            class="alert alert-primary"
+            role="alert"
+            style="text-transform: capitalize"
+          >
+            Chú ý đón xem, chỉ 1 lần duy nhất!
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Bài 8 ----  -->
+      <div class="card mt-2" style="width: 700px">
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          Bài 8: Tìm sinh viên xa trường nhất
+        </div>
+        <div class="card-body">
+          <div class="row form-group">
+            <h3 class="col-12">Sinh Viên 1</h3>
+            <div class="col-4">
+              <input
+                type="text"
+                class="form-control"
+                id="tenSV1"
+                placeholder="Nhập tên"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="toaDoX1"
+                placeholder="Nhập tọa độ x"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="toaDoY1"
+                placeholder="Nhập tọa độ y"
+              />
+            </div>
+            <h3 class="col-12 mt-3">Sinh Viên 2</h3>
+            <div class="col-4">
+              <input
+                type="text"
+                class="form-control"
+                id="tenSV2"
+                placeholder="Nhập tên"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="toaDoX2"
+                placeholder="Nhập tọa độ x"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="toaDoY2"
+                placeholder="Nhập tọa độ y"
+              />
+            </div>
+            <h3 class="col-12 mt-3">Sinh Viên 3</h3>
+            <div class="col-4">
+              <input
+                type="text"
+                class="form-control"
+                id="tenSV3"
+                placeholder="Nhập tên"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="toaDoX3"
+                placeholder="Nhập tọa độ x"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="toaDoY3"
+                placeholder="Nhập tọa độ y"
+              />
+            </div>
+            <h3 class="col-12 mt-3">Trường học</h3>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="toaDoXTruong"
+                placeholder="Nhập tọa độ x"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                id="toaDoYTruong"
+                placeholder="Nhập tọa độ y"
+              />
+            </div>
+          </div>
+          <button class="btn btn-danger px-5" id="timSVXa">Tìm</button>
+        </div>
+        <div class="card-footer text-center">
+          <div id="xuatSVXa" class="alert alert-primary" role="alert">
+            Chú ý đón xem, chỉ 1 lần duy nhất!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
